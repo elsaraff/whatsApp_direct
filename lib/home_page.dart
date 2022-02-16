@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -88,6 +86,9 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(height: 10.0),
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10))),
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
                         //debugPrint(finalPhoneNumber.toString());
